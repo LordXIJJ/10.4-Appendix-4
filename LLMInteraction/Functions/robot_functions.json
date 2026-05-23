@@ -1,0 +1,233 @@
+[
+  {
+  "type": "function",
+  "function": {
+    "name": "move_robot",
+    "description": "Move the robot to a named point of interest.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "location_name": {
+          "type": "string",
+          "description": "A key referring to a location inside locations.json"
+        },
+        "speed": {
+          "type": "number",
+          "description": "Normalised speed between 0 and 1"
+        }
+      },
+      "required": ["location_name"]
+    }
+  }
+},
+
+  {
+    "type": "function",
+    "function": {
+      "name": "unscrew_fastener",
+      "description": "Remove or tighten a specified fastener.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "fastener_id": { "type": "string" },
+          "torque_nm": { "type": "number" },
+          "direction": {
+            "type": "string",
+            "enum": ["ccw", "cw"]
+          }
+        },
+        "required": ["fastener_id", "direction"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "grip_part",
+      "description": "Grip a specified part using a chosen mode.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "part_id": { "type": "string" },
+          "grip_mode": {
+            "type": "string",
+            "enum": ["pinch", "wrap", "precision"]
+          }
+        },
+        "required": ["part_id"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "place_part",
+      "description": "Place a part into a defined location.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "part_id": { "type": "string" },
+          "location_id": { "type": "string" }
+        },
+        "required": ["part_id", "location_id"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "inspect_with_camera",
+      "description": "Inspect a target with the robot camera.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_id": { "type": "string" },
+          "view": {
+            "type": "string",
+            "enum": ["closeup", "overall", "alignment", "damage"]
+          }
+        },
+        "required": ["target_id"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "request_human_assistance",
+      "description": "Ask the human operator to perform a manual task.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reason": { "type": "string" },
+          "suggested_action": { "type": "string" }
+        },
+        "required": ["reason"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "detect_screws",
+      "description": "Detect screws in the workspace or on a specified component using perception sensors.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "component_id": {
+            "type": "string",
+            "description": "Optional component identifier to limit screw detection to a specific part."
+          },
+          "region": {
+            "type": "string",
+            "description": "Optional workspace region identifier (e.g., top_cover, battery_pack)."
+          }
+        },
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "emergency_stop",
+      "description": "Immediately stop all robot motion and place the system in a safe state.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string",
+            "description": "Optional explanation for why the emergency stop was triggered."
+          }
+        },
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "go_to_next_task",
+      "description": "Advance execution to the next task in the current disassembly plan.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string",
+            "description": "Optional specific task identifier to move to. If omitted, the next sequential task is selected."
+          }
+        },
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "stop_motion",
+      "description": "Stop the current robot motion without triggering an emergency stop.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string",
+            "description": "Type of stop to apply.",
+            "enum": ["soft_stop", "hold_position"]
+          }
+        },
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "resume_motion",
+      "description": "Resume robot motion after a stop if the system state allows.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "from_state": {
+            "type": "string",
+            "description": "Optional state from which motion is resumed.",
+            "enum": ["last_motion", "safe_pose"]
+          }
+        },
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "start_timer",
+      "description": "Start a general-purpose timer.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "timer_id": { "type": "string" },
+          "label": { "type": "string" }
+        },
+        "required": ["timer_id"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "stop_timer",
+      "description": "Stop a general-purpose timer and store elapsed time.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "timer_id": { "type": "string" }
+        },
+        "required": ["timer_id"]
+      }
+    }
+  }
+
+  
+
+  
+]

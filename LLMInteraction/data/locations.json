@@ -1,0 +1,31 @@
+{
+  "poses": {
+    "home":     { "x": 276.03,   "y": -141.09,   "z": 697.59, "rx": -171.24, "ry": 1.74,   "rz": 78.22 },
+    "cable": {
+      "x": 376.03,   "y": -141.09,   "z": 597.59, "rx": -171.24, "ry": 1.74,   "rz": 78.22
+    },
+    "cover": {
+      "x": 276.03,   "y": 141.09,   "z": 700.00, "rx": -171.24, "ry": 1.74,   "rz": 78.22
+    },
+    "battery": {
+"x": 276.03,   "y": -141.09,   "z": 497.59, "rx": -171.24, "ry": 1.74,   "rz": 78.22    }
+  },
+
+  "parts": {
+    "bolt_1": {
+      "fastener_id": "EVBOLT_1",
+      "location_pose": "bolt_1",
+      "type": "m6"
+    },
+    "battery_module": {
+      "part_id": "BAT_MOD",
+      "grip_pose": "grip_module",
+      "dropoff_location": "tray_A"
+    }
+  },
+
+  "workspaces": {
+    "safe_zone": ["home", "tray_A"],
+    "disassembly_zone": ["bolt_1", "approach_bolt_1"]
+  }
+}

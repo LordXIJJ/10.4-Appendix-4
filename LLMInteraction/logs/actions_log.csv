@@ -1,0 +1,37 @@
+timestamp,tool_name,arguments,resolved_pose,message
+2025-12-12T08:23:57.271349,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T08:24:44.441135,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T08:25:02.258886,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T08:25:16.093900,unscrew_fastener,"{""fastener_id"": ""bolt_1"", ""direction"": ""ccw""}",null,Unscrew fastener bolt_1
+2025-12-12T08:31:58.944392,inspect_with_camera,"{""target_id"": ""cable"", ""view"": ""closeup""}",null,Inspect cable (view=closeup)
+2025-12-12T08:31:58.952808,unscrew_fastener,"{""fastener_id"": ""cable_fastener"", ""torque_nm"": 5, ""direction"": ""ccw""}",null,Unscrew fastener cable_fastener
+2025-12-12T11:43:27.734715,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T11:44:12.547879,unscrew_fastener,"{""fastener_id"": ""nut 1"", ""direction"": ""ccw""}",null,Unscrew fastener nut 1
+2025-12-12T16:15:51.292844,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T16:23:32.008591,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T16:24:53.418659,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T16:25:07.437995,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T16:33:50.625760,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T16:38:03.108772,move_robot,"{""location_name"": ""home""}","{""x"": 0.0, ""y"": 0.0, ""z"": 400.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 180.0}",Move robot to home at speed 0.2
+2025-12-12T16:41:02.806370,move_robot,"{""location_name"": ""tray""}","{""x"": -200.0, ""y"": 300.0, ""z"": 150.0, ""rx"": 180.0, ""ry"": 0.0, ""rz"": 0.0}",Move robot to tray at speed 0.2
+2025-12-12T16:42:58.017590,move_robot,"{""location_name"": ""Fox""}","{""x"": 276.03, ""y"": -141.09, ""z"": 597.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to Fox at speed 0.2
+2025-12-12T16:43:37.558414,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T16:49:23.677714,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T16:49:53.674374,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T16:55:30.975669,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T16:55:48.501253,move_robot,"{""location_name"": ""tray""}","{""x"": 276.03, ""y"": -141.09, ""z"": 497.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to tray at speed 0.2
+2025-12-12T16:58:42.682494,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T17:05:51.412181,move_robot,"{""location_name"": ""position_three""}","{""x"": 376.03, ""y"": -141.09, ""z"": 597.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to position_three at speed 0.2
+2025-12-12T17:07:33.666146,move_robot,"{""location_name"": ""position_two""}","{""x"": 276.03, ""y"": -141.09, ""z"": 700.0, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to position_two at speed 0.2
+2025-12-12T17:11:27.009117,move_robot,"{""location_name"": ""position_one""}","{""x"": 276.03, ""y"": -141.09, ""z"": 497.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to position_one at speed 0.2
+2025-12-12T17:14:16.334753,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T17:14:28.879751,move_robot,"{""location_name"": ""position_one""}","{""x"": 276.03, ""y"": -141.09, ""z"": 497.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to position_one at speed 0.2
+2025-12-12T17:15:02.383608,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T17:15:14.312055,move_robot,"{""location_name"": ""position_two""}","{""x"": 276.03, ""y"": 141.09, ""z"": 700.0, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to position_two at speed 0.2
+2025-12-12T17:18:14.927711,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T17:21:06.180768,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T17:21:34.590989,move_robot,"{""location_name"": ""cover""}","{""x"": 276.03, ""y"": 141.09, ""z"": 700.0, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to cover at speed 0.2
+2025-12-12T17:26:56.434482,move_robot,"{""location_name"": ""cover""}","{""x"": 276.03, ""y"": 141.09, ""z"": 700.0, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to cover at speed 0.2
+2025-12-12T17:27:09.314486,move_robot,"{""location_name"": ""cable""}","{""x"": 376.03, ""y"": -141.09, ""z"": 597.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to cable at speed 0.2
+2025-12-12T17:27:24.099309,move_robot,"{""location_name"": ""home""}","{""x"": 276.03, ""y"": -141.09, ""z"": 697.59, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to home at speed 0.2
+2025-12-12T17:27:35.090069,move_robot,"{""location_name"": ""cover""}","{""x"": 276.03, ""y"": 141.09, ""z"": 700.0, ""rx"": -171.24, ""ry"": 1.74, ""rz"": 78.22}",Move robot to cover at speed 0.2
